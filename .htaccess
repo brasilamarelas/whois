@@ -1,0 +1,8 @@
+#Habilita a Reescrita
+RewriteEngine On
+
+RewriteCond $1 !^(index\.php|static|robots\.txt)
+RewriteRule ^(.*)$ index.php?\/$1 [L]
+
+#Seta o charset padrão
+AddDefaultCharset utf-8
